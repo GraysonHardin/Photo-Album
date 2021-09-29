@@ -13,5 +13,5 @@ class TestGetRequest(unittest.TestCase):
         mockget.return_value = mock_response
         mock_response.json = lambda: expected
 
-        actual = get_album_id_request()
+        actual = get_album_id_request(1)
         self.assertEqual(actual, expected)
