@@ -15,3 +15,10 @@ class TestGetRequest(unittest.TestCase):
 
         actual = get_album_id_request(1)
         self.assertEqual(actual, expected)
+
+    @patch.object(requests, 'get')
+    def test_get_request_method_try_catch(self, mockget):
+        mockget.side_effect = Exception()
+        with self.assertRaises(Exception) as context:
+            get_album_id_request(1)
+        self.assertTrue('Error occurred' in str(context.exception))
