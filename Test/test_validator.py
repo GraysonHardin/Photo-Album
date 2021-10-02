@@ -5,7 +5,7 @@ from Production.validator import validate_input
 class TestValidator(unittest.TestCase):
     def test_validator_value_is_below_min_range(self):
         actual = validate_input(0)
-        expected = 'Error, value must be between 1 and 5000'
+        expected = False
 
         self.assertEqual(actual, expected)
 
