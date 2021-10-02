@@ -11,7 +11,7 @@ class TestValidator(unittest.TestCase):
 
     def test_validator_value_is_above_max_range(self):
         actual = validate_input(5001)
-        expected = 'Error, value must be between 1 and 5000'
+        expected = False
 
         self.assertEqual(actual, expected)
 
