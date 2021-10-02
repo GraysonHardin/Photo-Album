@@ -17,13 +17,13 @@ class TestValidator(unittest.TestCase):
 
     def test_validator_within_min_range(self):
         actual = validate_input(1)
-        expected = None
+        expected = True
 
         self.assertEqual(actual, expected)
 
     def test_validator_within_max_range(self):
         actual = validate_input(5000)
-        expected = None
+        expected = True
 
         self.assertEqual(actual, expected)
 
