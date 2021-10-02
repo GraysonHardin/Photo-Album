@@ -8,4 +8,3 @@ def get_album_id_request(album_id):
 
     except Exception as err:
         raise Exception('Error occurred', err)
-# add a try/catch later
