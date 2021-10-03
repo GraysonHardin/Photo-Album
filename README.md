@@ -4,7 +4,7 @@
 
 This app utilizes the Requests library, users will need to install the package. 
 
-* Open your terminal and run the following command:
+ Open your terminal and run the following command:
 - Windows: python -m pip install requests
 
 - MAC: 
