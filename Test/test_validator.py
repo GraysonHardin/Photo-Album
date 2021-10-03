@@ -29,6 +29,6 @@ class TestValidator(unittest.TestCase):
 
     def test_validator_try_catch(self):
         actual = validate_input('invalid input')
-        expected = 'Invalid input! Try again'
+        expected = 'Invalid input! Value must be an integer between 1 and 5000.'
 
         self.assertEqual(actual, expected)

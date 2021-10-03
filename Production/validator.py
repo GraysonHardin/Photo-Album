@@ -7,4 +7,4 @@ def validate_input(user_input):
             return True
 
     except ValueError:
-        return 'Invalid input! Try again'
+        return 'Invalid input! Value must be an integer between 1 and 5000.'
